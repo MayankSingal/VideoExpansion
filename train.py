@@ -157,7 +157,7 @@ def train_val():
 			if ((i+1) % 100) == 0:
 				torchvision.utils.save_image((I0_var),'samples/'+ str(i+1) +'1.jpg',normalize=True)
 				for jj,image in enumerate(image_collector):
-					torchvision.utils.save_image((image),'samples/'+ str(i+1) + str(jj+1)+'.jpg',normalize=True)
+					torchvision.utils.save_image((image),'samples/'+ str(i+1) + str(jj+2)+'.jpg',normalize=True)
 				torchvision.utils.save_image((I1_var),'samples/'+str(i+1)+'9.jpg',normalize=True)
 
 
